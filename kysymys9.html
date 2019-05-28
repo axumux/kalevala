@@ -1,0 +1,172 @@
+<html lang="fi">
+<head>
+
+<style>
+
+body {
+  background: #edd9a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d2b48c, #785836); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d2b48c, #785836); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 9px #999;
+    padding: 15px 25px;
+}
+
+.button1 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2 {
+ background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button3 {
+     background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button3:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button4:hover {
+   background-color: #555555;
+    color: white;
+}
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button5 {
+    background-color: #af6746;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+
+.button5:hover {
+   background-color: #c94306;
+    color: white;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<title>Taso 9</title>
+</head>
+
+<font face="Arial" color="#ffffff" size="5">
+<audio src="cupheadinkwellisle3.mp3" autoplay="true" loop="true">
+</audio>
+<center>
+<h1> Kysymys 9/10 </h1>
+<h3>Kuka on šamanistinen Kalevalan viholliskansan Pohjolan matriarkka?</h3>
+<h2> Sinulla on 15 sekuntia aikaa vastata kysymykseen! </h2>
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette3.wikia.nocookie.net%2Fwhitewolf%2Fimages%2Ff%2Ff7%2FLouhi_full_art.jpg%2Frevision%2Flatest%3Fcb%3D20140526002214&f=1" width="300">
+<p id="jtn"></p>
+<script>
+(function (global) {
+
+    if(typeof (global) === "Hyv&auml yritys, there's no going back!") {
+        throw new Error("Hyv&auml yritys, there's no going back!");
+    }
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+    global.onload = function () {
+        noBackPlease();
+
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            e.stopPropagation();
+        };
+    }
+
+})(window);
+
+function timedText()
+{
+	let x = document.getElementById("jtn");
+	var z = function(v) {
+		if(v === 0) { window.location = "piste8.html";}
+		x.innerHTML = (v + " sekuntia j&aumlljell&auml");
+		setTimeout(function(){z(v-1);},1000);
+	}
+	z(15);
+}
+timedText()
+</script>
+<p>
+
+
+<a href="piste8.html" id="yks" class="button button1">Joukahainen</a>
+<A HREF="piste8.html" id="kaks" class="button button2">Tuonelainen</a>
+<p>
+<a href="kysymys10.html" id="kol"class="button button3">Louhi</a>
+<a href="piste8.html" id="nel"class="button button4">Hiisi</a><p>
+</center>
+</body>
+</html>

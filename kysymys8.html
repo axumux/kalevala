@@ -1,0 +1,173 @@
+<html lang="fi">
+<head>
+
+<style>
+
+body {
+  background: #f857a6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b35a26, #fcbe6d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b35a26, #fcbe6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 9px #999;
+    padding: 15px 25px;
+}
+
+.button1 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2 {
+ background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button3 {
+     background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button3:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button4:hover {
+   background-color: #555555;
+    color: white;
+}
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button5 {
+    background-color: #af6746;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+
+.button5:hover {
+   background-color: #c94306;
+    color: white;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<title>Taso 8</title>
+</head>
+
+<font face="Arial" color="#ffffff" size="5">
+<audio src="cupheadhighscore.mp3" autoplay="true" loop="true">
+</audio>
+<center>
+<h1> Kysymys 8/10 </h1>
+<h3>Mit&auml Kullervo l&oumlysi leiv&aumlst&auml&aumln?</h3>
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fhyvinvointi.ts.fi%2Fwp-content%2Fuploads%2Fsites%2F2%2F2016%2F03%2FDSC_2548-1024x685.jpg&f=1" width=300>
+<h2> Sinulla on 15 sekuntia aikaa vastata kysymykseen! </h2>
+<p id="jtn"></p>
+<script>
+(function (global) {
+
+    if(typeof (global) === "Hyv&auml yritys, there's no going back!") {
+        throw new Error("Hyv&auml yritys, there's no going back!");
+    }
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+    global.onload = function () {
+        noBackPlease();
+
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            e.stopPropagation();
+        };
+    }
+
+})(window);
+
+function timedText()
+{
+	let x = document.getElementById("jtn");
+	var z = function(v) {
+		if(v === 0) { window.location = "piste7.html";}
+		x.innerHTML = (v + " sekuntia j&aumlljell&auml");
+		setTimeout(function(){z(v-1);},1000);
+	}
+	z(15);
+}
+timedText()
+</script>
+<p>
+
+
+<a href="piste7.html" id="yks" class="button button1">Jalokiven</a>
+<A HREF="piste7.html" id="kaks" class="button button2">Myrkky&auml</a>
+<p>
+<a href="kysymys9.html" id="kol"class="button button3">Kiven</a>
+<a href="piste7.html" id="nel"class="button button4">&Oumlt&oumlk&oumlit&auml</a><p>
+</center>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<html lang="fi">
+<title>Sait kolme pistettä!</title>
+<head>
+<style>
+
+body {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+h3 {
+  display:inline-block;
+  font-size: 30px;
+  background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+
+  -webkit-animation: rainbowanim 10s ease infinite;
+     -moz-animation: rainbowanim 10s ease infinite;
+          animation: rainbowanim 10s ease infinite;
+}
+
+@-webkit-keyframes rainbowanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes rainbowanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes rainbowanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 46px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 8px #999;
+    padding: 4px 6px;
+}
+.button1 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 200px;
+}
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+</style>
+<script>
+(function (global) {
+
+    if(typeof (global) === "Hyv&auml yritys, there's no going back!") {
+        throw new Error("Hyv&auml yritys, there's no going back!");
+    }
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+    global.onload = function () {
+        noBackPlease();
+
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            e.stopPropagation();
+        };
+    }
+
+})(window);
+</script>
+<title> </title>
+</head>
+<body background="cuphead.jpg">
+<font face="Arial" color="#e8e5e5" size="6">
+<audio src="cupheadtheend.mp3" loop="1" autoplay="1"></audio>
+
+<center>
+<h2>H&aumlvisit pelin, mutta sait kuitenkin kolme pistettä.</h2> <h2>Rehellisesti sanottuna surkea tulos.</h2><p><h2>3/10</h2>
+<img src="crievritiem.gif">
+  <h2>Yrit&auml uudelleen?</h2> <a href="kysymys1.html" class="button button1"><h3>T&aumlst&auml pelaamaan!</h3></a></br></br>
+  <a href="etusivu.html" class="button button1"><h1>Etusivulle!</h1></a>
+
+
+</center>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<html lang="fi">
+<head>
+
+<style>
+
+body {
+  background: #1e130c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 9px #999;
+    padding: 15px 25px;
+}
+
+.button1 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2 {
+ background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button3 {
+     background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button3:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button4:hover {
+   background-color: #555555;
+    color: white;
+}
+.button4 {
+    background-color: #c1bfbf;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+.button5 {
+    background-color: #af6746;
+    color: black;
+    border: 2px solid #555555;
+    width: 250px;
+}
+
+
+.button5:hover {
+   background-color: #c94306;
+    color: white;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<title>Taso 2</title>
+</head>
+
+<font face="Arial" color="#ffffff" size="5">
+<audio src="cupheadtutorial.mp3" autoplay="true" loop="true">
+</audio>
+<center>
+<h1> Kysymys 2/10 </h1>
+<h3>Mikä on Kalevalan runomitta?</h3>
+<h2> Sinulla on 15 sekuntia aikaa vastata kysymykseen! </h2>
+<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fkaku.kalevalaseura.fi%2Fwp-content%2Fuploads%2Fsites%2F4%2F2018%2F03%2FMateli-Kuivalattaren-runo-734x390.jpg&f=1" width="300">
+<p id="jtn"></p>
+<script>
+(function (global) {
+
+    if(typeof (global) === "Hyv&auml yritys, there's no going back!") {
+        throw new Error("Hyv&auml yritys, there's no going back!");
+    }
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+    global.onload = function () {
+        noBackPlease();
+
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            e.stopPropagation();
+        };
+    }
+
+})(window);
+
+function timedText()
+{
+	let x = document.getElementById("jtn");
+	var z = function(v) {
+		if(v === 0) { window.location = "piste1.html";}
+		x.innerHTML = (v + " sekuntia j&aumlljell&auml");
+		setTimeout(function(){z(v-1);},1000);
+	}
+	z(15);
+}
+timedText()
+</script>
+<p>
+
+
+<a href="kysymys3.html" id="yks" class="button button1">Nelipolvinen trokee</a>
+<A HREF="piste1.html" id="kaks" class="button button2">Jambinen pentametri</a>
+<p>
+<a href="piste1.html" id="kol"class="button button3">Daktyylinen heksametri</a>
+<a href="piste1.html" id="nel"class="button button4">Tertsiini</a><p>
+</center>
+</body>
+</html>
